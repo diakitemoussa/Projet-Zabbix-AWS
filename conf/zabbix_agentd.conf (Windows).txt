@@ -1,0 +1,23 @@
+# C:\Program Files\Zabbix Agent\zabbix_agentd.conf
+### Zabbix Agent configuration file for Windows
+
+# IP du serveur Zabbix qui peut interroger cet agent
+Server=10.0.1.39
+
+# IP du serveur Zabbix pour l’agent actif (push)
+ServerActive=10.0.1.39
+
+# Nom unique de l’hôte tel que défini dans Zabbix
+Hostname=Windows-Agent-01
+
+# Port TCP utilisé par l’agent
+ListenPort=10050
+
+# Répertoire des logs
+LogFile=C:\Program Files\Zabbix Agent\zabbix_agentd.log
+
+# Répertoire des PID (optionnel)
+PidFile=C:\Program Files\Zabbix Agent\zabbix_agentd.pid
+
+# Timeout pour les checks
+Timeout=10

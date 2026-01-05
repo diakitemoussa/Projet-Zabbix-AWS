@@ -1,0 +1,26 @@
+# /etc/zabbix/zabbix_agentd.conf
+### Zabbix Agent configuration file for Linux
+
+# IP du serveur Zabbix qui peut interroger cet agent
+Server=10.0.1.39
+
+# IP du serveur Zabbix pour l’agent actif (push)
+ServerActive=10.0.1.39
+
+# Nom unique de l’hôte tel que défini dans Zabbix
+Hostname=Linux-Server-01
+
+# Port TCP utilisé par l’agent
+ListenPort=10050
+
+# Répertoire des logs
+LogFile=/var/log/zabbix/zabbix_agentd.log
+
+# Répertoire des PID
+PidFile=/var/run/zabbix/zabbix_agentd.pid
+
+# Timeout pour les checks
+Timeout=10
+
+# Mode de l’agent : 1 = actif, 0 = passif
+# EnableRemoteCommands=1
